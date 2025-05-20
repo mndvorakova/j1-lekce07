@@ -13,43 +13,43 @@ public class Svatky {
     private final Map<String, MonthDay> svatky = new HashMap<>();
 
     public Svatky() {
-        svatky.put("Zikmund", MonthDay.of(5, 2));
-        svatky.put("Alexej", MonthDay.of(5, 3));
-        svatky.put("Alex", MonthDay.of(5, 3));
-        svatky.put("Květoslav", MonthDay.of(5, 4));
-        svatky.put("Klaudie", MonthDay.of(5, 5));
-        svatky.put("Klaudia", MonthDay.of(5, 5));
-        svatky.put("Claudia", MonthDay.of(5, 5));
-        svatky.put("Radoslav", MonthDay.of(5, 6));
-        svatky.put("Stanislav", MonthDay.of(5, 7));
-        svatky.put("Ctibor", MonthDay.of(5, 9));
-        svatky.put("Stibor", MonthDay.of(5, 9));
-        svatky.put("Blažena", MonthDay.of(5, 10));
-        svatky.put("Svatava", MonthDay.of(5, 11));
-        svatky.put("Pankrác", MonthDay.of(5, 12));
-        svatky.put("Servác", MonthDay.of(5, 13));
-        svatky.put("Bonifác", MonthDay.of(5, 14));
-        svatky.put("Žofie", MonthDay.of(5, 15));
-        svatky.put("Přemysl", MonthDay.of(5, 16));
-        svatky.put("Aneta", MonthDay.of(5, 17));
-        svatky.put("Nataša", MonthDay.of(5, 18));
-        svatky.put("Ivo", MonthDay.of(5, 19));
-        svatky.put("Zbyšek", MonthDay.of(5, 20));
-        svatky.put("Monika", MonthDay.of(5, 21));
-        svatky.put("Emil", MonthDay.of(5, 22));
-        svatky.put("Vladimír", MonthDay.of(5, 23));
-        svatky.put("Vladimíra", MonthDay.of(5, 23));
-        svatky.put("Jana", MonthDay.of(5, 24));
-        svatky.put("Vanesa", MonthDay.of(5, 24));
-        svatky.put("Viola", MonthDay.of(5, 25));
-        svatky.put("Filip", MonthDay.of(5, 26));
-        svatky.put("Valdemar", MonthDay.of(5, 27));
-        svatky.put("Vilém", MonthDay.of(5, 28));
-        svatky.put("Viliam", MonthDay.of(5, 28));
-        svatky.put("Maxmilián", MonthDay.of(5, 29));
-        svatky.put("Maxim", MonthDay.of(5, 29));
-        svatky.put("Ferdinand", MonthDay.of(5, 30));
-        svatky.put("Kamila", MonthDay.of(5, 31));
+        svatky.put("Alfonse Elric", MonthDay.of(5, 2));
+        svatky.put("Ichigo Kurosaki", MonthDay.of(5, 3));
+        svatky.put("Rukia Kuchiki", MonthDay.of(5, 3));
+        svatky.put("Byakuya Kuchiki", MonthDay.of(5, 4));
+        svatky.put("Son Goku", MonthDay.of(5, 5));
+        svatky.put("Kakarote", MonthDay.of(5, 5));
+        svatky.put("Vegeta", MonthDay.of(5, 5));
+        svatky.put("Bulma", MonthDay.of(5, 6));
+        svatky.put("Freeza", MonthDay.of(5, 7));
+        svatky.put("Son Gohan", MonthDay.of(5, 9));
+        svatky.put("Son Goten", MonthDay.of(5, 9));
+        svatky.put("Kuririne", MonthDay.of(5, 10));
+        svatky.put("Madoka", MonthDay.of(5, 11));
+        svatky.put("Homura", MonthDay.of(5, 12));
+        svatky.put("Piccolo", MonthDay.of(5, 13));
+        svatky.put("Muten Roshi", MonthDay.of(5, 14));
+        svatky.put("Tanjiro", MonthDay.of(5, 15));
+        svatky.put("Cell", MonthDay.of(5, 16));
+        svatky.put("Totoro", MonthDay.of(5, 17));
+        svatky.put("Mononoke", MonthDay.of(5, 18));
+        svatky.put("Agitou", MonthDay.of(5, 19));
+        svatky.put("Chihiro", MonthDay.of(5, 20));
+        svatky.put("No face", MonthDay.of(5, 21));
+        svatky.put("Light Yagami", MonthDay.of(5, 22));
+        svatky.put("Ryuk", MonthDay.of(5, 23));
+        svatky.put("L", MonthDay.of(5, 23));
+        svatky.put("Ryuzaki", MonthDay.of(5, 24));
+        svatky.put("Misa Amane", MonthDay.of(5, 24));
+        svatky.put("Renji Abarai", MonthDay.of(5, 25));
+        svatky.put("Sosuke Aizen", MonthDay.of(5, 26));
+        svatky.put("Kisuke Urahara", MonthDay.of(5, 27));
+        svatky.put("Kenpachi Zaraki", MonthDay.of(5, 28));
+        svatky.put("Ulquirra Cifer", MonthDay.of(5, 28));
+        svatky.put("Nel tu", MonthDay.of(5, 29));
+        svatky.put("Shinji Hirako", MonthDay.of(5, 29));
+        svatky.put("Zangetsu", MonthDay.of(5, 30));
+        svatky.put("Trunks", MonthDay.of(5, 31));
     }
 
     /**
@@ -60,7 +60,8 @@ public class Svatky {
      */
     public MonthDay vratKdyMaSvatek(String jmeno) {
         //TODO
-        return null;
+
+        return svatky.get(jmeno);
     }
 
     /**
@@ -71,7 +72,7 @@ public class Svatky {
      */
     public boolean jeVSeznamu(String jmeno) {
         //TODO
-        return false;
+        return svatky.containsKey(jmeno);
     }
 
     /**
@@ -81,7 +82,7 @@ public class Svatky {
      */
     public int getPocetJmen() {
         //TODO
-        return 0;
+        return svatky.size();
     }
 
     /**
@@ -91,7 +92,7 @@ public class Svatky {
      */
     public Set<String> getSeznamJmen() {
         //TODO
-        return null;
+        return svatky.keySet();
     }
 
     /**
@@ -102,6 +103,7 @@ public class Svatky {
      */
     public void pridejSvatek(String jmeno, MonthDay denMesic) {
         //TODO
+        svatky.put(jmeno, denMesic);
     }
 
     /**
@@ -113,6 +115,8 @@ public class Svatky {
      */
     public void pridejSvatek(String jmeno, int den, int mesic) {
         //TODO
+        svatky.put(jmeno, MonthDay.of(den, mesic));
+
     }
 
     /**
@@ -124,6 +128,8 @@ public class Svatky {
      */
     public void pridejSvatek(String jmeno, int den, Month mesic) {
         //TODO
+        svatky.put(jmeno, MonthDay.of(mesic, den));
+
     }
 
     /**
@@ -133,5 +139,6 @@ public class Svatky {
      */
     public void smazSvatek(String jmeno) {
         //TODO
+        svatky.remove(jmeno);
     }
 }

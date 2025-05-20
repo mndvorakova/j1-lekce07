@@ -5,8 +5,7 @@ import org.junit.jupiter.api.Test;
 import java.time.Month;
 import java.time.MonthDay;
 
-import static org.junit.jupiter.api.Assertions.assertEquals;
-import static org.junit.jupiter.api.Assertions.assertNull;
+import static org.junit.jupiter.api.Assertions.*;
 
 /**
  * @author Filip Jirsák
@@ -19,7 +18,7 @@ class SvatkyTest {
     @Test
     void kdyMaSvatek() {
         Svatky svatky = new Svatky();
-        assertEquals(MonthDay.of(5, 18), svatky.vratKdyMaSvatek("Nataša"));
+        assertEquals(MonthDay.of(5, 18), svatky.vratKdyMaSvatek("Mononoke"));
         assertNull(svatky.vratKdyMaSvatek("Eva"));
     }
 
@@ -29,6 +28,10 @@ class SvatkyTest {
     @Test
     void jeVSeznamu() {
         //TODO Otestovat, že najde v seznamu existující jméno a nenajde neexistující jméno
+        Svatky svatky = new Svatky();
+        assertTrue(svatky.jeVSeznamu("Mononoke"));
+        assertFalse(svatky.jeVSeznamu("Eva"));
+
     }
 
     /**
