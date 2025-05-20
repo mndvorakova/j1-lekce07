@@ -40,6 +40,8 @@ class SvatkyTest {
     @Test
     void getPocetJmen() {
         //TODO Otestovat, že vrací počet jmen, která máme v seznamu
+        Svatky svatky = new Svatky();
+        assertEquals(36, svatky.getPocetJmen());
     }
 
     /**
