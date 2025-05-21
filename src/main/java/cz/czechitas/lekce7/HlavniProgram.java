@@ -24,14 +24,14 @@ public class HlavniProgram {
         svatky.getSeznamJmen().forEach(jmeno -> System.out.printf("- %s", jmeno).println());
 
 
-        svatky.smazSvatek("Kdo");
-        System.out.printf("Po smazání Kdovíka je v seznamu je %d jmen.", svatky.getPocetJmen()).println();
+        svatky.smazSvatek("Trunks");
+        System.out.printf("Po smazání Trunsk-kun je v seznamu je %d jmen.", svatky.getPocetJmen()).println();
 
-        svatky.pridejSvatek("Rukia", 1, 6);
-        svatky.pridejSvatek("Ichigo", 2, Month.JUNE);
-        svatky.pridejSvatek("Byakuya", MonthDay.of(6, 3));
-        svatky.pridejSvatek("Ishida", MonthDay.of(Month.JUNE, 3));
-        System.out.printf("Po přidání Rukii, Ichiga, Kuchiki Byakuyi a Ishida je v seznamu je %d jmen.", svatky.getPocetJmen()).println();
+        svatky.pridejSvatek("Usagi", 3, 7);
+        svatky.pridejSvatek("Jolanda", 2, Month.DECEMBER);
+        svatky.pridejSvatek("Son Foi", MonthDay.of(1, 1));
+        svatky.pridejSvatek("Asuka", MonthDay.of(Month.JUNE, 3));
+        System.out.printf("Po přidání Usagi, Jolandy, Son Foi a Asuky je v seznamu je %d jmen.", svatky.getPocetJmen()).println();
 
     }
 
