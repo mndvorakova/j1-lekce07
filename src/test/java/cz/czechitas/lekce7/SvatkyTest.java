@@ -78,7 +78,7 @@ class SvatkyTest {
         //TODO Otestuje, že je jméno v seznamu svátků a že má přiřazen správný den
         Svatky svatky = new Svatky();
         svatky.pridejSvatek("Bulma", 6, Month.MAY);
-        assertEquals(MonthDay.of(MonthDay.of(Month.MAY, 6), svatky.vratKdyMaSvatek("Bulma"));
+        assertEquals(MonthDay.of(Month.MAY, 6), svatky.vratKdyMaSvatek("Bulma"));
     }
 
     /**
